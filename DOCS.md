@@ -43,7 +43,8 @@ _Requires Person API keys (valid Instance object can be retrieved using `Lassie\
 - `$data = Lassie\Person\Account::transfer($instance, [ params... ]);`
 - `$data = Lassie\Person\Account::upgrade($instance, [ params... ]);`
 
-- `$data = Lassie\Person\Events::pay($instance, [ params... ]);`
+- `$data = Lassie\Person\Event::pay($instance, [ params... ]);`
+- `$data = Lassie\Person\Membership::pay($instance, [ params... ]);`
 
 - `$data = Lassie\Person\API::revoke($instance, [ params... ]);`
 

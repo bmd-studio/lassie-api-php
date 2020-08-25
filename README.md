@@ -123,6 +123,13 @@ Similarly to the Model API, you can call `Lassie\Person` methods based on the AP
 	$groups = Lassie\Person::getGroups($JohnDoe);
 	var_dump($groups);
 
+    // => POST api/person/membership/pay
+    $payment_result = Lassie\Person\Membership::pay($JohnDoe, [
+        'activity_id' => 2,
+        'mollie_redirect_url' => 'https://www.link-to-integration-application.com/',
+    ]);
+    var_dump($payment_result);
+
 ### If you have a username & password
 
 The Person API keys can also be automatically generated if you have a username and password, using the `Lassie\Person::getPerson(...)` method.

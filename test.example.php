@@ -47,7 +47,6 @@ require_once 'Lassie.php';
 // );
 // var_dump(Lassie\Transaction::getTypes($transactionInstance));
 
-
 // $LassieAdmin = new Lassie\Instance(
 // 	'https://demo.lassie.cloud/api/v2',
 // 	'c00eb08826a18a43f5b2f0e48e9a2277',
@@ -56,3 +55,7 @@ require_once 'Lassie.php';
 // );
 // var_dump(Lassie\Person::getPayments($LassieAdmin));
 // var_dump(Lassie\Person\Account::accept($LassieAdmin));
+// var_dump(Lassie\Person\Membership::pay($LassieAdmin, [
+//   'activity_id' => 2,
+//   'mollie_redirect_url' => 'https://demo.lassie.cloud/',
+// ]));
