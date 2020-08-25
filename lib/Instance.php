@@ -92,7 +92,7 @@ class Instance
 
 		$parsed = json_decode($response);
 		if (!$parsed) {
-			throw new \Exception('Could not parse Lassie response!');
+			throw new \Exception('Could not parse Lassie response: '. $response);
 		}
 		return $parsed;
 	}
