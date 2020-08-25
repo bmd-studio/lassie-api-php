@@ -39,7 +39,6 @@ require_once 'Lassie.php';
 // var_dump($managementInstance->validate());
 // var_dump(Lassie\Management\Person::create($managementInstance));
 
-
 // $transactionInstance = new Lassie\Instance(
 //    'https://demo.lassie.cloud/api/v2',
 //    '08bd4ea9273a4c1fb4c0ce37712421ff',
