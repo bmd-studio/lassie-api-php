@@ -63,7 +63,7 @@ class LassieApi {
     /**
      * Curl library
      */
-    private $curl = NULL;
+    public $curl = NULL;
 
     /**
      * Host parameters
