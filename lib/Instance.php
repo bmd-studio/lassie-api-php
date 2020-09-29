@@ -91,7 +91,7 @@ class Instance
 		curl_close($curl);
 
 		$parsed = json_decode($response);
-		if (!$parsed) {
+		if ($parsed === null && json_last_error() !== JSON_ERROR_NONE) {
 			throw new \Exception('Could not parse Lassie response: '. $response);
 		}
 		return $parsed;
