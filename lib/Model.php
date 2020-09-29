@@ -26,8 +26,8 @@ class Model extends BaseModule
 
 		$classPath = explode('\\', get_called_class());
 		$params = array_merge([
-			'name' => Helpers::to_snake_case(end($classPath)),
-			'method' => $method
+			'model_name' => Helpers::to_snake_case(end($classPath)),
+			'method_name' => $method,
 		], $params);
 
 		return $lassie->performRequest($type, 'model', $params);
